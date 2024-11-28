@@ -1,0 +1,29 @@
+<mat-card class="login-card ">
+  <mat-card-header>
+    <mat-card-title class="login-title">Bienvenidos</mat-card-title>
+    <mat-card-subtitle class="login-subtitle">Ingrese correo y clave</mat-card-subtitle>
+  </mat-card-header>
+  <form [formGroup]="usuarioLogin" (ngSubmit)="validarAcceso()">
+    <mat-form-field appearance="outline" class="custom-form-field">
+      <mat-label>Correo Electrónico</mat-label>
+      <input matInput formControlName="NombreUsuario" placeholder="Ingrese su correo" title="Correo electrónico">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="custom-form-field">
+      <mat-label>Contraseña</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" formControlName="Contrasena"
+        placeholder="Ingrese su contraseña" title="Contraseña">
+      <button mat-icon-button matSuffix type="button" (click)="togglePasswordVisibility()">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+
+    </mat-form-field>
+
+    <mat-card-actions align="end">
+      <button mat-raised-button type="submit" color="primary" class="login-button">Iniciar Sesión</button>
+    </mat-card-actions>
+  </form>
+  <p class="registration-link">No tienes cuenta? <a [routerLink]="['/registro']" class="registration-link"
+      (click)="cerrarFormulario()">Regístrate</a></p>
+
+</mat-card>

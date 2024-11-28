@@ -1,0 +1,70 @@
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+mat-card {
+    margin-bottom: 20px !important;
+    transition: transform 0.3s ease;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  mat-card:hover {
+    transform: scale(1.05);
+  }
+
+  mat-card-header {
+    display: flex;
+    align-items: center;
+  }
+
+  mat-card-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+  }
+  img{
+    width: 30%;
+  }
+  .contenidoPlan {
+    display: flex;
+    align-items: center;
+  }
+  
+  .plan-image {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0;
+    margin-right: 20px; /* Ajusta el espacio entre la imagen y el texto según sea necesario */
+  }
+  
+  mat-card-content {
+    flex: 1;
+  }
+  
+  mat-card-actions {
+    text-align: center; 
+  }
+  
+  .cta-button {
+    display: block;
+    font: normal 36px 'Cookie', cursive;
+    width: 100%; 
+    background-color: #2d2a30;
+    color: #e0ac1c;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #56525c;
+    color: rgb(255, 255, 255);
+  }
+  

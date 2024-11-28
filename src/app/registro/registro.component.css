@@ -1,0 +1,119 @@
+::selection {
+    background-color: #b5e2e7;
+  }
+  
+  ::-moz-selection {
+    background-color: #8ac7d8;
+  }
+  
+  body {
+    background-image: url('../../assets/img/fondogym.avif');
+    background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    margin: 0; /* Eliminar el margen predeterminado del cuerpo */
+}
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Establecer la altura al 100% de la ventana gráfica */
+  }
+  
+  
+  #logbox {
+    margin: 40px auto;
+    height: 580px;
+    width: 380px;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 175%;
+    color: #757575;
+    font-weight: 300;
+  }
+  
+  h1, input {
+    font-family: "Open Sans", Helvetica, sans-serif;
+  }
+  
+  .input {
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+  }
+  .input:focus {
+    outline: none;
+    border-bottom-color: #58c791 !important;
+  }
+  .input:hover {
+    border-bottom-color: #dcdcdc;
+  }
+  .input:invalid {
+    box-shadow: none;
+  }
+  
+  .pass:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+  }
+  
+  .inputButton {
+    position: relative;
+    cursor: pointer;
+    width: 85%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #58c791;
+    border: none;
+    -webkit-box-shadow: 0 5px 0 #3aad73;
+    -moz-box-shadow: 0 5px 0 #3aad73;
+    box-shadow: 0 5px 0 #3aad73;
+  }
+  .inputButton:hover {
+    top: 2px;
+    -webkit-box-shadow: 0 3px 0 #3aad73;
+    -moz-box-shadow: 0 3px 0 #3aad73;
+    box-shadow: 0 3px 0 #3aad73;
+  }
+  .inputButton:active {
+    top: 5px;
+    box-shadow: none;
+  }
+  .inputButton:focus {
+    outline: none;
+  }
+
+/* Ajustar la posición del calendario */
+.input.pass[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    top: 0; /* Cambiado de 50% a 0 para ajustar la posición vertical */
+    cursor: pointer;
+  }
+  
+  /* Añadir un margen superior al contenedor del campo de fecha para separar el calendario */
+  .input.pass[type="date"] {
+    margin-top: 10px; /* Ajusta según sea necesario */
+  }
+  

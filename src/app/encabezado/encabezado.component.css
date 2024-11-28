@@ -1,0 +1,36 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  span{
+
+    padding-right: 20px;
+  }
+.cabecera{
+  background-color: #2d2a30;
+}
+.titulo{
+  color: white;
+}
+.cuenta{
+  color: white;
+}
+.salir{
+  color: white;
+}
+.user{
+  color: orange;
+  font-size: 14px;
+
+}
+.userLog{
+  font-size: 14px;
+  color: white;
+}
+.white-text {
+  color: #fff !important; 
+}
+
+.user-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+}

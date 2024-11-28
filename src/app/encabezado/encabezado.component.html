@@ -1,0 +1,21 @@
+<mat-toolbar class="cabecera">
+    <span class="titulo">GorillaGym</span>
+    <span class="example-spacer"></span>
+    <ng-container *ngIf="!isLogginIn; else loggedInTemplate">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="openLogin()">
+        <mat-icon class="cuenta">account_circle</mat-icon>
+      </button>
+    </ng-container>
+    <ng-template #loggedInTemplate>
+        <div class="user-container">
+            <span class="user">Usuario:</span>
+        <span class="userLog">{{nombreUsuario}}</span>
+        <button mat-button class="white-text" (click)="OpenInicio()">Inicio</button>
+        <button mat-button class="white-text" (click)="Openclases()">Clases</button>
+        <button mat-button class="white-text" (click)="OpenInstructores()">Planes</button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="closeLogin()">
+          <mat-icon class="salir">exit_to_app</mat-icon>
+        </button>
+      </div>
+    </ng-template>
+</mat-toolbar>

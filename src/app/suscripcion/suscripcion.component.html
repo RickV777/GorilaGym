@@ -1,0 +1,53 @@
+<main>
+    <!-- Plan Básico -->
+    <mat-card>
+        <div class="contenidoPlan">
+            <img class="plan-image" src="assets/img/planBasico.png" alt="Plan Básico">
+            <mat-card-content>
+            <mat-card-header>
+              <mat-card-title>Plan Básico</mat-card-title>
+              <mat-card-subtitle>Acceso a instalaciones estándar y clases grupales</mat-card-subtitle>
+            </mat-card-header>
+          <p>Disfruta de nuestro plan básico con acceso completo a nuestras instalaciones estándar y clases grupales. Ideal para quienes buscan empezar su viaje fitness.</p>
+            </mat-card-content>
+        </div>
+      <mat-card-actions>
+        <button class="cta-button" (click)="ConfirmarSuscripcion(1)">Suscribirme</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Plan VIP -->
+    <mat-card>
+    <div class="contenidoPlan">
+      <img class="plan-image" src="assets/img/planVIP.png" alt="Plan VIP">
+      <mat-card-content>
+      <mat-card-header>
+        <mat-card-title>Plan VIP</mat-card-title>
+        <mat-card-subtitle>Acceso a instalaciones premium y asesoramiento personalizado</mat-card-subtitle>
+      </mat-card-header>
+        <p>Experimenta nuestro plan VIP con acceso exclusivo a instalaciones premium, clases VIP y asesoramiento personalizado de nuestros entrenadores expertos.</p>
+    </mat-card-content>
+    </div>
+    <mat-card-actions>
+        <button class="cta-button" (click)="ConfirmarSuscripcion(2)">Suscribirme</button> 
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Plan Premium -->
+    <mat-card>
+    <div class="contenidoPlan">
+      <img class="plan-image" src="assets/img/planPremium.png" alt="Plan Premium">
+      <mat-card-content>
+      <mat-card-header>
+        <mat-card-title>Plan Premium</mat-card-title>
+        <mat-card-subtitle>Acceso a todas las instalaciones y eventos exclusivos</mat-card-subtitle>
+      </mat-card-header>
+    <p>El plan Premium te ofrece acceso completo a todas nuestras instalaciones, eventos exclusivos y sesiones de entrenamiento personalizadas. Tu membresía todo en uno.</p>
+      </mat-card-content>
+    </div>
+      <mat-card-actions>
+        <button class="cta-button" (click)="ConfirmarSuscripcion(3)">Suscribirme</button> 
+      </mat-card-actions>
+    </mat-card>
+
+  </main>

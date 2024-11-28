@@ -1,0 +1,84 @@
+/* Estilo para el título del cuadro modal */
+h1.mat-dialog-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contenido del cuadro modal */
+div.mat-dialog-content {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los botones en el cuadro modal */
+div.mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.mat-button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.mat-raised-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #2fb4cc;
+    border: 2px solid #2fb4cc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.mat-button:hover,
+button.mat-raised-button:hover {
+    background-color: #fff;
+    color: #2fb4cc;
+}
+/* Estilo para el título del cuadro modal */
+h1.mat-dialog-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contenido del cuadro modal */
+div.mat-dialog-content {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los botones en el cuadro modal */
+div.mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.mat-button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.mat-raised-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #2fb4cc;
+    border: 2px solid #2fb4cc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.mat-button:hover,
+button.mat-raised-button:hover {
+    background-color: #fff;
+    color: #2fb4cc;
+}

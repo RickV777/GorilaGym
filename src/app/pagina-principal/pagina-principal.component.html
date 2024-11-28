@@ -1,0 +1,91 @@
+<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Mis suscripciones
+    </mat-panel-title>
+    <mat-panel-description>
+      Información sobre tus planes
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <!-- Verifica si suscripcionInfo es null -->
+  <ng-container *ngIf="!suscripcionInfo; else contenidoSuscripcion">
+
+    <!-- Muestra el mensaje por defecto si suscripcionInfo es null -->
+    <ng-template #mensajePorDefecto>
+      Aún no estás suscrito. Únete a un plan!.
+    </ng-template>
+
+    <!-- Utiliza ngTemplateOutlet para mostrar el mensaje por defecto -->
+    <ng-container *ngTemplateOutlet="mensajePorDefecto"></ng-container>
+  </ng-container>
+
+  <!-- Si suscripcionInfo no es null, muestra el contenido de la suscripción -->
+  <ng-template #contenidoSuscripcion>
+    Estás suscrito al plan: {{ suscripcionInfo.plan.nombre_Plan }} <br>
+    Descripción: {{ suscripcionInfo.plan.descripcion }} <br>
+    Precio: {{ suscripcionInfo.plan.precio }}
+    <button class="btnCancelarSus" (click)="CancelarSuscripcion()">Cancelar</button>
+  </ng-template>
+</mat-expansion-panel>
+
+<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Mis clases
+    </mat-panel-title>
+    <mat-panel-description>
+      Información sobre tus clases
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <!-- Verifica si inscripcion es null -->
+  <ng-container *ngIf="!inscripcionInfo; else contenidoInscripcion">
+
+    <!-- Muestra el mensaje por defecto si suscripcionInfo es null -->
+    <ng-template #mensajePorDefectoInscripciones>
+      Aún no estás inscrito. Únete a una clase!.
+    </ng-template>
+
+    <!-- Utiliza ngTemplateOutlet para mostrar el mensaje por defecto -->
+    <ng-container *ngTemplateOutlet="mensajePorDefectoInscripciones"></ng-container>
+  </ng-container>
+
+  <!-- Si suscripcionInfo no es null, muestra el contenido de la suscripción -->
+  <ng-template #contenidoInscripcion>
+    Estás inscrito a la clase: {{ inscripcionInfo.clase.nombre }} <br>
+    Descripción: {{ inscripcionInfo.clase.descripcion }} <br>
+    Instructor: {{ inscripcionInfo.clase.instructor }} <br>
+    Jornada: {{ inscripcionInfo.clase.jornada }} <br>
+    <button class="btnCancelarIns" (click)="CancelarInscripcion()">Cancelar</button>
+  </ng-template>
+</mat-expansion-panel>
+
+<main>
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Explora las Últimas Novedades</mat-card-title>
+      <mat-card-subtitle>Descubre lo más emocionante y beneficioso que Gorilla Gym tiene reservado para ti.</mat-card-subtitle>
+    </mat-card-header>
+    <div class="news-section">
+        <!-- Noticia 1 -->
+        <div class="news-item">
+          <h3>¡Nueva Clase de Alta Intensidad!</h3>
+          <img src="assets/img/gym.png" alt="noticia 1">
+          <p>Estamos emocionados de introducir una nueva clase de alta intensidad diseñada para llevarte al siguiente nivel. ¡Prepárate para sudar y alcanzar tus metas más rápido!</p>
+        </div>
+  
+        <!-- Noticia 2 -->
+        <div class="news-item">
+          <h3>Conoce Nuestros Planes de Entrenamiento</h3>
+          <img src="assets/img/descuento.png" alt="noticia 2">
+          <p>Aprovecha nuestras increíbles ofertas de suscripción durante la temporada de Black Friday. Conoce nuestros planes a precios especiales y dale un impulso a tu rutina de fitness. ¡No te pierdas esta oportunidad única para alcanzar tus objetivos!</p>
+        </div>
+      </div>
+  
+      <!-- Botón para suscripciones -->
+      <button class="btnSuscripciones" (click)="MostrarSuscripciones()">Descubre Nuestras Suscripciones</button>
+  <!-- Botón para clases -->
+  <button class="btnInscripciones" (click)="MostrarInscripciones()">Descubre Nuestras Clases</button>
+</mat-card>
+</main>

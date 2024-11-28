@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.error-container {
+    text-align: center;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.error-title {
+    font-size: 2em;
+    color: #383838;
+}
+
+.error-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #666;
+}
+.error-image {
+    width: 120px; 
+    margin-bottom: 15px;
+    cursor: pointer;
+}

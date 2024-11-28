@@ -1,0 +1,42 @@
+.login-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .login-subtitle {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .custom-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .login-button {
+    background-color: #1976D2; /* Color de fondo personalizado */
+    color: #fff; /* Color del texto */
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .registration-link {
+    text-align: center;
+    margin-top: 10px;
+    color: blue; /* Color azul */
+    text-decoration: none;
+  }
+  
+  .registration-link a {
+    text-decoration: underline; /* Subraya el enlace */
+  }
+  
+  

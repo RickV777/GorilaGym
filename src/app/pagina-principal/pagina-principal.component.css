@@ -1,0 +1,106 @@
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+img{
+    width: 70%;
+}
+h3 {
+  order: -1; /* Esto coloca el h3 al principio del contenedor */
+  font-weight: bold;
+}
+  h2 {
+    color: #333;
+  }
+  
+  .news-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto alinea verticalmente los elementos hijos */
+    justify-content: center; 
+    padding: 15px;
+    margin: 10px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.btnSuscripciones, .btnInscripciones{
+    font: normal 36px 'Cookie', cursive;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2d2a30;;
+    color: #e0ac1c;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnSuscripciones:hover, .btnInscripciones:hover {
+    background-color: #2980b9;
+  }
+
+  /* Estilos para el panel de expansión */
+mat-expansion-panel {
+  width: 100%;
+  margin-bottom: 16px; /* Espaciado entre paneles */
+}
+
+/* Estilos para el encabezado del panel de expansión */
+mat-expansion-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0; /* Color de fondo del encabezado */
+  padding: 12px; /* Espaciado interno */
+}
+
+/* Estilos para el título del panel de expansión */
+mat-expansion-panel-header .mat-panel-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Estilos para la descripción del panel de expansión */
+mat-expansion-panel-header .mat-panel-description {
+  font-size: 14px;
+}
+
+/* Estilos para el mensaje por defecto */
+#mensajePorDefecto, #mensajePorDefectoInscripciones {
+  font-size: 14px;
+  color: #888; /* Color del texto */
+  text-align: center;
+}
+
+
+/* Estilos para el contenido de la suscripción */
+#contenidoSuscripcion, #contendioInscripcion {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Estilos para el botón de cancelar */
+.btnCancelarSus, .btnCancelarIns {
+  background-color: #e74c3c; /* Rojo */
+  color: #fff; /* Blanco */
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btnCancelarSus:hover, .btnCancelarIns {
+  background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+}
+
